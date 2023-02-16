@@ -21,6 +21,8 @@ module.exports = {
   ],
   rules: {
     'prettier/prettier': 'warn', // 新增
-    'vue/comment-directive': 'off'
+    'vue/comment-directive': 'off',
+    //关闭组件命名规则
+    "vue/multi-word-component-names":"off"
   }
 }
