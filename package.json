@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "lint": "eslint --fix ./src --ext .vue,.js,.ts",
     "prepare": "husky install"
   },
@@ -14,6 +15,23 @@
     "precommit-msg",
     "lint"
   ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.vue": [
+      "eslint --fix"
+    ],
+    "*.{html,vue,vss,sass,less}": [
+      "prettier --write"
+    ],
+    "package.json": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "vue": "^3.2.45"
   },
