@@ -20,7 +20,7 @@ module.exports = {
     'prettier' // 新增
   ],
   rules: {
-    'prettier/prettier': 'error', // 新增
+    'prettier/prettier': 'warn', // 新增
     'vue/comment-directive': 'off'
   }
 }
