@@ -31,10 +31,11 @@ export default defineConfig(({ command, mode }) => {
         '@': path.resolve(__dirname, 'src'),
         '@/assets': path.resolve(__dirname, 'src/assets'),
         '@/components': path.resolve(__dirname, 'src/components'),
+        '@/layout': path.resolve(__dirname, 'src/layout'),
         '@/views': path.resolve(__dirname, 'src/views'),
         '@/store': path.resolve(__dirname, 'src/store')
       },
-      extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
+      extensions: ['.mjs', 'cjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
     },
     // 反向代理
     server: {
